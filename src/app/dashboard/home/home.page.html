@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="cat-head rainbow_text_animated">
+    Enjoy the cats! ≽^•⩊•^≼
+  </div>
+
+  <div class="maincontent">
+    <div id="grid" class="imgrid">
+      <div *ngFor="let imageData of catImages" class="col col-lg">
+        <img [src]="imageData.url" alt="Cat Image">
+      </div>
+    </div>
+  </div>
+  <div class="ion-text-center">
+    <ion-button id="logout" class="ion-margin" (click)="logout()">Log out</ion-button>
+  </div>
+</ion-content>

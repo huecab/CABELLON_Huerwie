@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>My Components</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-button>Select This</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-button color="primary">Primary Button</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-button color="secondary">Secondary Button</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-button color="danger">Danger Button</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-card>
+          <ion-card-header>
+            Card Header
+          </ion-card-header>
+          <ion-card-content>
+            Card Content
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-button color="primary" (click)="toggleModal()">Modal</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-button color="primary" (click)="alert()">Alert</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-button color="primary" (click)="presentToast()">Present Toast</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <ion-toggle [(ngModel)]="condition"></ion-toggle>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col size="12" text-center>
+        <custom-slider></custom-slider>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
