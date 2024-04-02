@@ -3,6 +3,15 @@
     transition: transform 0.3s ease;
   }
   
-  .small-content:hover {
+.small-content:hover {
     transform: scale(0.9);
+  }
+
+.cbutton{
+    --ion-color-primary: rgb(179, 81, 231);
+  }
+
+.button {
+    --background: rgb(179, 81, 231);
+    --color: white;
   }

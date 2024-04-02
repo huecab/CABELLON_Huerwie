@@ -19,4 +19,4 @@ import { ModalComponent } from './modal/modal.component';
   ],
   declarations: [CalculatorPage, ModalComponent, SliderComponent]
 })
-export class CalculatorPageModule {}
+export class CalculatorPageModule { }

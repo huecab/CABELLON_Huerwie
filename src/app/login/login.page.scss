@@ -1,20 +1,68 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    background-color: #121212;
-    width: 50%;
-    margin: 0 auto;
-    color: white;
-}
-.input {
-    margin-top: 20px;
-    color: #212121;
-}
-.button{
+.button {
     margin: 20px;
     width: 100%;
 }
 
+.rainbow {
+    background: linear-gradient(to right,
+            #ff0000, #ff9900, #ffff00, #33cc33, #0099ff, #6633ff, #9900cc, #ff00ff, #ff0066, #ff6666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 1000% 100%;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+h1 {
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    word-spacing: 10px;
+}
+
+h1 span {
+    letter-spacing: 15px;
+    display: block;
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+ion-content {
+    text-align: center;
+}
+
+.button {
+    margin: 20px auto;
+    width: 50%;
+    height: 6%;
+    max-width: 200px;
+    --ion-color-primary: rgb(179, 81, 231);
+}
+
+.input {
+    margin-top: 20px;
+    color: #212121;
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    text-align: left !important;
+}
+
+.left-align {
+    text-align: left !important;
+    margin-left: 20px !important;
+    padding-left: 0 !important;
+}

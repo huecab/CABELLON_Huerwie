@@ -1,0 +1,15 @@
+.left-align {
+    text-align: left !important;
+    margin-left: 20px !important;
+    padding-left: 0 !important;
+}
+
+.mbutton {
+    --color: rgb(179, 81, 231);
+    margin-right: 10px;
+}
+
+ion-fab-button {
+    --background: rgb(179, 81, 231);
+    --color: white;
+  }

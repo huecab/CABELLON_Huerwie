@@ -16,9 +16,4 @@ export class ModalComponent  implements OnInit {
   async closeModal(){
     await this.modalController.dismiss();
   }
-
-  toggleSize() {
-  this.isSmall = !this.isSmall;
-
-  }
 }

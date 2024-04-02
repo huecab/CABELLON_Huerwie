@@ -244,13 +244,65 @@
 // }
 
 .ios body {
-  --ion-background-color: black;
-  --ion-text-color: white;
-  --ion-button-color: green;
+  --ion-background-color: rgb(10, 10, 10);
+  --ion-text-color: rgb(255, 255, 255);
+  --ion-button-color: rgb(255, 109, 214);
+  --ion-card-background: rgb(0, 0, 0);
+  --ion-toolbar-background: rgb(0, 0, 0);
+  --ion-item-background: #000000;
+  --ion-tabs-color: black;
+}
+
+.ios ion-tab-bar[slot='bottom'] {
+  --background: black;
+}
+
+.ios ion-tab-button {
+  --color-selected: white;
+  --color: white;
+}
+
+.ios .input {
+  background-color: white;
+}
+
+.ios .calc-display {
+  background-color: white !important;
+  color: black !important;
+}
+
+.ios .cus-alert {
+  .alert-wrapper {
+      background-color: black;
+      color: white;
+  }
 }
 
 .md body {
   --ion-button-color: pink;
-  --ion-background-color: #121212;
-  --ion-text-color: rgb(255, 255, 255);
+  --ion-background-color: #e2e2e2;
+  --ion-text-color: rgb(4, 4, 4);
+  --ion-card-background: rgb(0, 0, 0);
+  --ion-item-background: #000000;
+  --ion-toolbar-background: #ffffff;
+}
+
+.md .text-color {
+  color: black;
+}
+
+.md .cus-alert {
+  .alert-wrapper {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+  }
+}
+
+.md ion-tab-bar[slot='bottom'] {
+  --background: rgb(255, 255, 255);
+}
+
+.md ion-tab-button {
+  --color-selected: rgb(0, 0, 0);
+  --color: rgb(0, 0, 0);
 }

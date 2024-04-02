@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController, ModalController } from '@ionic/angular';
+import { AlertController, ModalController, Platform } from '@ionic/angular';
 import { ModalComponent } from './calculator/modal/modal.component';
 
 @Component({
@@ -10,7 +10,7 @@ import { ModalComponent } from './calculator/modal/modal.component';
 })
 export class DashboardPage implements OnInit {
   username: any;
-  constructor(private router: Router, private modalController: ModalController, private alertController: AlertController) { }
+  constructor(private router: Router, private modalController: ModalController, private alertController: AlertController, private platform: Platform) { }
 
   ngOnInit() {
     this.username = localStorage.getItem('username');
@@ -50,7 +50,8 @@ export class DashboardPage implements OnInit {
     const alert = await this.alertController.create({
       header: 'DID YOU KNOW?',
       message: this.messages[newMessageIndex],
-      buttons: ['OK']
+      buttons: ['OK'],
+      cssClass: 'cus-alert'
     });
     this.lastMessageIndex = newMessageIndex;
     await alert.present();

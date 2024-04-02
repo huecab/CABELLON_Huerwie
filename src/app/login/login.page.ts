@@ -28,15 +28,22 @@ export class loginPage implements OnInit {
       this.presentToast();
     }
   }
+
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Login',
       subHeader: 'status',
       message: 'Successfully Logged-in!',
       buttons: ['OK'],
+      cssClass: 'cus-alert'
     });
     await alert.present();
+
+    setTimeout(() => {
+      alert.dismiss();
+    }, 3000);
   }
+
   async presentToast() {
     const toast = await this.toastController.create({
       message: 'Login Failed',
@@ -44,10 +51,12 @@ export class loginPage implements OnInit {
     });
     toast.present();
   }
+
   routing() {
     this.router.navigate(['dashboard/home']);
     localStorage.setItem('username', this.username);
   }
+  
   ngOnInit() { }
 }
 
