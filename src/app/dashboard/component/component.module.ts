@@ -7,8 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { ComponentPageRoutingModule } from './component-routing.module';
 
 import { ComponentPage } from './component.page';
-import { ModalComponent } from './modal/modal.component';
-import { SliderComponent } from './slider/slider.component';
+import { ModalComponent } from '../calculator/modal/modal.component';
+import { SliderComponent } from '../calculator/slider/slider.component';
 
 @NgModule({
   imports: [
@@ -17,6 +17,6 @@ import { SliderComponent } from './slider/slider.component';
     IonicModule,
     ComponentPageRoutingModule
   ],
-  declarations: [ComponentPage, ModalComponent, SliderComponent]
+  declarations: [ComponentPage]
 })
-export class ComponentPageModule {}
+export class ComponentPageModule { }

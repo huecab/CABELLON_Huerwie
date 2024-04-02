@@ -14,9 +14,13 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule),
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardPageModule),
     canActivate: [AuthenticationService],
-  }
+  },
+  {
+    path: 'calculator',
+    loadChildren: () => import('./dashboard/calculator/calculator.module').then(m => m.CalculatorPageModule)
+  },
 ];
 
 @NgModule({

@@ -9,10 +9,10 @@ const routes: Routes = [
     component: DashboardPage,
     children: [
       {
-        path: 'component',
+        path: 'calculator',
         loadChildren: () =>
-          import('./component/component.module').then(
-            (m) => m.ComponentPageModule
+          import('./calculator/calculator.module').then(
+            (m) => m.CalculatorPageModule
           ),
       },
       {
@@ -28,4 +28,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class DashboardPageRoutingModule {}
+export class DashboardPageRoutingModule { }

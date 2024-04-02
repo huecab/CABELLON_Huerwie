@@ -25,6 +25,6 @@ export class HomePage {
 
   logout() {
     this.router.navigate(['login']);
-    localStorage.removeItem('username'); //removing session variable
+    localStorage.removeItem('username');
   }
 }

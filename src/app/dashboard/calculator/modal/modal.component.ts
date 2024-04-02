@@ -7,7 +7,8 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent  implements OnInit {
-
+  condition = false;
+  isSmall: boolean = false;
   constructor(private modalController: ModalController) { }
 
   ngOnInit() {}
@@ -16,4 +17,8 @@ export class ModalComponent  implements OnInit {
     await this.modalController.dismiss();
   }
 
+  toggleSize() {
+  this.isSmall = !this.isSmall;
+
+  }
 }
