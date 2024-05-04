@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Dashboard</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div id="container">
+  <h1><strong>Spotify Top Songs</strong></h1>
+  <div class="display" *ngFor="let user of userList">
+    <div class="display1">
+      <div class="list">
+        <h2>Title: {{user.title}} </h2>
+        <h2>Artist: {{user.artist}} </h2>
+        <h2>Genre: {{user.genres}} </h2>
+        <h2>Released Date: {{user.releaseDate}} </h2>
+        <h2>Explicit: {{user.isExplicit}} </h2>
+        <h2>Stream Count: {{user.streams}} </h2>
+      </div>
+      <div class="button1">
+        <ion-button color="success" (click)="update(user)"><ion-icon name="create-sharp"></ion-icon></ion-button>
+        <ion-button color="danger" (click)="delete(user)"><ion-icon name="close-circle-sharp"*ngIf="user.id"></ion-icon></ion-button>
+      </div>
+    </div>
+  </div>
+  <div class="button2">
+  <ion-button (click)="addUser()"><ion-icon name="person-add-sharp" class="buttonz"></ion-icon></ion-button>
+  <ion-button (click)="logOut()"><ion-icon name="log-out-sharp" class="buttonz"></ion-icon></ion-button>
+</div>
+</div>
+</ion-content>
