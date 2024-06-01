@@ -1,0 +1,63 @@
+ion-content {
+  --ion-background-color: rgb(0, 0, 0) !important;
+}
+ion-toolbar {
+  --background: #000000;
+}
+ion-title {
+  width: 100%;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.gif-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.gif-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.intro{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  z-index: 5;
+}
+.social-icons {
+  position: absolute;
+  bottom: 160px;
+  left: 49%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.social-icons ion-icon {
+  font-size: 40px;
+  margin: 0 45px;
+}
+.social-icons ion-icon[name='logo-facebook'] {
+  color: #09f;
+}
+.social-icons ion-icon[name='logo-instagram'] {
+  color: #3f0;
+}
+.social-icons ion-icon[name='briefcase'] {
+  color: #ff0;
+}
+.social-icons .portfolio-icon {
+  position: relative;
+}
